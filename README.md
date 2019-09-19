@@ -22,6 +22,8 @@ git remote add balena [endpoint]
 git push balena master
 ```
 
+Initial build:
+
 ```bash
            ┌─────────┬────────────┬──────────────────────┐
 [Info]     │ Service │ Image Size │ Build Time           │
@@ -53,6 +55,17 @@ git push balena master
 			           <.'_.''
 			             <'
 
+```
+
+Sample of outcome of subsequent builds:
+
+```bash
+[Info]     ┌─────────┬────────────┬────────────┐
+[Info]     │ Service │ Image Size │ Build Time │
+[Info]     ├─────────┼────────────┼────────────┤
+[Info]     │ main    │ 315.70 MB  │ 10 seconds │
+[Info]     └─────────┴────────────┴────────────┘
+[Info]     Build finished in 1 minute, 24 seconds
 ```
 
 ## Author
