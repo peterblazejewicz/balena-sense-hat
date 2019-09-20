@@ -11,7 +11,6 @@ RUN python -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
 # Use `install_packages` if you need to install dependencies
 RUN pip install -U pip && \
-    pip install -U wheel && \
     pip install -U numpy && \
     pip install -U pillow
 # RTIMU library fix
