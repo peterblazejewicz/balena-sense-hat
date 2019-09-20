@@ -28,9 +28,9 @@ Initial build:
            ┌─────────┬────────────┬──────────────────────┐
 [Info]     │ Service │ Image Size │ Build Time           │
 [Info]     ├─────────┼────────────┼──────────────────────┤
-[Info]     │ main    │ 189.68 MB  │ 6 minutes, 8 seconds │
+[Info]     │ main    │ 182.98 MB  │ 5 minutes, 10 seconds│
 [Info]     └─────────┴────────────┴──────────────────────┘
-[Info]     Build finished in 7 minutes, 8 seconds
+[Info]     Build finished in 5 minutes, 53 seconds
 			    \
 			     \
 			      \\
@@ -63,7 +63,7 @@ Sample of outcome of subsequent builds:
 [Info]     ┌─────────┬────────────┬────────────┐
 [Info]     │ Service │ Image Size │ Build Time │
 [Info]     ├─────────┼────────────┼────────────┤
-[Info]     │ main    │ 189.68 MB  │ 6 seconds  │
+[Info]     │ main    │ 182.98 MB  │ 6 seconds  │
 [Info]     └─────────┴────────────┴────────────┘
 [Info]     Build finished in 38 seconds
 ```
