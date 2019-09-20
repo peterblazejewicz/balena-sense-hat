@@ -26,13 +26,13 @@ COPY requirements.txt ./
 RUN pip install -U --no-cache-dir -r requirements.txt
 
 # Trimmed down app container
-FROM balenalib/%%BALENA_MACHINE_NAME%%-debian-python:3.7.3-stretch-run as app
+FROM balenalib/%%BALENA_MACHINE_NAME%%-alpine-python:edge as app
 # Extra python env
 ENV LANG=C.UTF-8
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 # Use `install_packages` if you need to install dependencies
-RUN install_packages libjpeg62-turbo-dev
+RUN install_packages libjpeg-turbo-dev
 # Make sure we use the virtualenv:
 COPY --from=0 /opt/venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
